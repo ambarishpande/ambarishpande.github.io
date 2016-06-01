@@ -1,0 +1,47 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="row">
+				<h3 style="margin-left: 15px;">LANGUAGES</h3>
+				<div class="col-md-5 col-xs-4 col-sm-4" ng-repeat="language in skills.languages">
+					<img alt="{{language.name}}" ng-src="assets/images/skills/{{language.img}}" class="img-responsive " style="width: 80px;height: 80px;padding:5px;">	
+				</div>				
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="row">
+				<h3 style="margin-left: 15px;">FRAMEWORKS</h3>
+				<div class="col-md-5 col-xs-4 col-sm-4" ng-repeat="framework in skills.frameworks">
+					<img alt="{{framework.name}}" ng-src="assets/images/skills/{{framework.img}}" class="img-responsive " style="width: 80px;height: 80px;padding:5px;">	
+				</div>				
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="row">
+				<h3 style="margin-left: 15px;">SOFTWARES AND TOOLS</h3>
+				<div class="col-md-5 col-xs-4 col-sm-4" ng-repeat="tool in skills.tools">
+					<img alt="{{tool.name}}" ng-src="assets/images/skills/{{tool.img}}" class="img-responsive " style="width: 80px;height: 80px;padding:5px;">	
+				</div>				
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+</div>
+<div style="position: fixed;bottom: 15px;left:15px;display: flex;">
+			
+		<div class="mybtn" ui-sref="about">
+			<i class="fa fa-chevron-left"></i>
+		</div>
+			
+		<h4 style="line-height: 30px;padding-left:10px; ">ABOUT ME</h4>
+	
+	</div>
+	<div style="position: fixed;bottom: 15px;right:20px;display: flex;">
+			
+		<h4 style="line-height: 30px;padding-right:10px; ">PROJECTS</h4>
+		<div class="mybtn" ui-sref="projects.list">
+			<i class="fa fa-chevron-right" style="margin-left: 17px;"></i>
+		</div>
+			
+	
+	</div>

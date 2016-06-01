@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-4" ng-repeat="project in projects" >
+		  <a ui-sref="projects.details({slug : '{{project.slug}}'})">
+		  <div class="card">
+		    <div class="card-image waves-effect waves-block waves-light">
+		      <img class="activator" ng-src="assets/images/projects/{{project.thumbnail}}">
+		    </div>
+		    <div class="card-content">
+		      <span style="color: black;">{{project.title}}</span>
+		    </div>		    
+		  </div>
+		  </a>
+		</div>
+	</div>
+</div>
+

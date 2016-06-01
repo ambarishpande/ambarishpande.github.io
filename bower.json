@@ -1,0 +1,18 @@
+{
+  "name": "My Portfolio Website",
+  "authors": [
+    "Ambarish Pande <ambarish.pande2011@gmail.com>"
+  ],
+  "description": "A website to showcase my skills and projects.",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

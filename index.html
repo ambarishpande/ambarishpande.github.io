@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ambarish Pande | Portfolio</title>
+  <meta name="description" content="Ambarish Pande portfolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <meta name="apple-mobile-web-app-title" content="Ambarish Pande">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="assets/images/logo.png">
+
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/component.css" type="text/css" />
+  
+  <link rel="stylesheet" href="assets/bower_components/font-awesome/css/font-awesome.min.css" type="text/css" />
+  
+  <link rel="stylesheet" href="libs/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <!-- build:css assets/styles/app.min.css -->
+  <!-- <link rel="stylesheet" href="assets/styles/app.css" type="text/css" /> -->
+  <!-- endbuild -->
+  
+</head>
+<body ng-app="app" ng-controller="AppCtrl">
+<div id="st-container" class="st-container">
+			<!-- 	
+				example menus 
+				these menus will be on top of the push wrapper
+			-->
+			
+			<nav class="st-menu st-effect-2" id="menu-2">
+				<ul>
+					<li><a  class="closeSidebar" ui-sref="home"><i class="fa fa-home" style="padding-right: 10px;"></i>HOME</a></li>
+					
+					<li><a  class="closeSidebar" ui-sref="about"><i class="fa fa-info-circle" style="padding-right: 10px;"></i>ABOUT</a></li>
+					
+					<li><a  class="closeSidebar" ui-sref="skills"><i class="fa fa-gears" style="padding-right: 10px;"></i>SKILLS</a></li>
+					
+					<li><a  class="closeSidebar" ui-sref="projects.list"><i class="fa fa-code" style="padding-right: 10px;"></i>PROJECTS</a></li>
+					
+					<li><a  class="closeSidebar" ui-sref="contact"><i class="fa fa-envelope-o" style="padding-right: 10px;"></i>CONTACT</a></li>
+					
+				</ul>
+			</nav>
+
+			<!-- content push wrapper -->
+			<div class="st-pusher">
+				<!-- 	
+					example menus 
+					these menus will be under the push wrapper
+				-->
+
+
+				<div class="st-content"><!-- this is the wrapper for the content -->
+					<nav class="navbar navbar-fixed" style="z-index: 5000;">
+					  <div class="container-fluid">
+					    <div class="navbar-header">
+
+					      <div id="st-trigger-effects" class="navbar-brand">
+					        <i class="fa  fa-navicon openSidebar" style="font-size:3.2rem;color: white;cursor:pointer;"></i>
+					      </div>
+					       <ul class="nav navbar-nav">
+						      
+                <h4 style="font-size: 24px;padding-top:8px;margin-left:20px;color: white;text-transform: uppercase;" ng-bind="$state.current.data.title"></h4>
+							</ul>	
+					      
+					    </div>
+					  </div>
+					</nav>	
+
+
+					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+						<!-- Top Navigation -->
+					
+						<div ui-view id="view"></div>
+					
+					</div><!-- /st-content-inner -->
+				</div><!-- /st-content -->
+			</div><!-- /st-pusher -->
+		</div><!-- /st-container -->
+
+
+
+<!-- build:js scripts/app.angular.js -->
+<!-- jQuery -->
+  <script src="libs/bower_components/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="libs/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+ <!-- Angular -->
+  <script src="libs/bower_components/angular/angular.js"></script>
+  <!-- router -->
+  <script src="libs/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+ <!-- Animations  -->
+  <script src="libs/bower_components/angular-animate/angular-animate.js"></script> 
+<!-- App -->
+  <script src="app.js"></script>
+  <script src="controllers.js"></script>
+  <script src="config.router.js"></script>
+  <script src="app.ctrl.js"></script>
+  <script type="text/javascript">
+  	    var container = $('.st-container');
+    var flag = false;//close
+    function open(){
+      container.addClass('st-effect-2');
+      container.addClass('st-menu-open');
+     // $('.st-content').css('overflow','hidden');
+      $('.openSidebar').removeClass('fa-navicon');
+      $('.openSidebar').addClass('fa-close');
+      flag = true;
+    }
+
+    function close(){
+      container.removeClass('st-effect-2');
+      container.removeClass('st-menu-open');
+     // $('.st-content').css('overflow','scroll');
+      $('.openSidebar').removeClass('fa-close');
+      $('.openSidebar').addClass('fa-navicon');
+      flag=false;
+
+    }
+    
+   
+
+    $('.openSidebar').click(function(){
+     
+      if (flag) {
+        close();
+      }else{
+
+       open();
+      }
+      });   
+
+    $('.closeSidebar').click(function(){
+     close();
+    });
+
+
+  </script>
+<!-- endbuild -->
+</body>
+</html>

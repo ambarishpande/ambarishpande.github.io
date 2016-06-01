@@ -1,0 +1,31 @@
+{
+	"projects":
+	[
+		{
+			"id":0,
+			"title":"Credenz '15 Website",
+			"thumbnail":"credenz.png",
+			"description":"A website designed and developed for the technical event of PICT IEEE Student Branch.",
+			"category" : "Website",
+			"date":"August 2015",
+			"technologies" : {
+				"frontend" : ["Bootstrap","JQuery"],
+				"backend" : []
+			},
+			"url":"http://www.credenz.info",
+			"screenshots":[
+				{
+					"title" : "Landing Page",
+					"url" : "credenz.png"
+				}
+			],
+			"slug":"credenz15"
+
+
+		}
+
+
+	]
+
+
+}
