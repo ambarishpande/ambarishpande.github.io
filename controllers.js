@@ -13,8 +13,7 @@
       	// body...
           $scope.desc =" I am a passionate, self taught computer and technology enthusiast. I believe \
                    in learning by doing, so  I always engage myself in learning new things and \
-                  mastering the things I already know. Currently engaged in Web design and \
-                  development. I am always ready to learn new technologies and explore them.";
+                  mastering the things I already know. Currently engaged in Full stack web development. I am always ready to learn new technologies and explore them.";
       
           $scope.about = {
             'education' : [
