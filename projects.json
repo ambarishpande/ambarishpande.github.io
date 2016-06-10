@@ -19,10 +19,145 @@
 					"url" : "credenz.png"
 				}
 			],
-			"slug":"credenz15"
+			"slug":"credenz-website"
+
+
+		},
+		{
+			"id":1,
+			"title":"Credenz '15 Live Center",
+			"thumbnail":"live.png",
+			"description":"Live Center is a real time feed display web app. It displayed the current updates of every event occurring under Credenz during the 3 days of Event. It also featured a section for displaying the short-listed candidates of each competition. Each event co-ordinator had a login and could add updates on the go, which would reflect on the LIVE CENTER instantly.",
+			"category" : "Web App",
+			"date":"August 2015",
+			"technologies" : {
+				"frontend" : ["Bootstrap","JQuery","JQuery-AJAX"],
+				"backend" : ["PHP","MySQL"]
+			},
+			"url":"NOT ONLINE",
+			"screenshots":[
+				{
+					"title" : "Live Center UI",
+					"url" : "live.png"
+				},
+				{
+					"title" : "Admin Dashboard",
+					"url" : "dashboard.png"
+				},
+				{
+					"title" : "Adding Updates",
+					"url" : "addupdate.png"
+				},
+				{
+					"title" : "Volunteer Login",
+					"url" : "volunteerLogin.png"
+				}
+			],
+			"slug":"credenz-live-center"
+
+
+		},
+		{
+			"id":2,
+			"title":"Credenz '15 Registrations",
+			"thumbnail":"login.png",
+			"description":"The participant registration of CREDENZ '15 was handled by an Android App and A Web Application. The Participant details were input into the Android App and on submitting the request to the server all the data was stored on server and an Email Receipt and an SMS were sent to the participant. All the data was accessible to the Organizers through a User Friendly and feature rich Web Application.",
+			"category" : "Web App",
+			"date":"August 2015",
+			"technologies" : {
+				"frontend" : ["Bootstrap","JQuery","Android","JSON"],
+				"backend" : ["PHP","MySQL"]
+			},
+			"url":"NOT ONLINE",
+			"screenshots":[
+				{
+					"title" : "Web App Login",
+					"url" : "login.png"
+				},
+				{
+					"title" : "Retrive Database",
+					"url" : "databaseRetrival.png"
+				},
+				{
+					"title" : "Adding users (Organisers/Volunteers)",
+					"url" : "registerVolunteer.png"
+				},
+				{
+					"title" : "Participant Registration",
+					"url" : "ParticipantRegistration.png"
+				},
+				{
+					"title" : "Volunteer Login App",
+					"url" : "volunteerlogin.png"
+				},
+				{
+					"title" : "Registration on App",
+					"url" : "participantRegistrationOnApp.png"
+				},
+				{
+					"title" : "Registration Confirmation",
+					"url" : "registrationConfirmation.png"
+				}
+			],
+			"slug":"credenz-registrations"
+
+
+		},
+		{
+			"id":3,
+			"title":"Impetus and Concepts Judging Management",
+			"thumbnail":"projects.png",
+			"description":"A system was developed to easily manage and monitor the Judging of Project Exibits in Impetus and Concepts - an annual Technical Event of Pune Institute of Computer Technology. It included a Web App for the Organisers to add judges, monitor projects being judged currently and have a central system to collect marks. The system alloted certain projects to judges based on the domains of expertise. Judge had an app login where he/she could read about the projects being exibited and select the one which he/she would like to visit. ",
+			"category" : "Web App",
+			"date":"August 2015",
+			"technologies" : {
+				"frontend" : ["Materialize CSS","JQuery","JQuery-AJAX"],
+				"backend" : ["PHP","MySQL"]
+			},
+			"url":"NOT ONLINE",
+			"screenshots":[
+				{
+					"title" : "Web App Login",
+					"url" : "adminlogin.png"
+				},
+				{
+					"title" : "Admin Dashboard",
+					"url" : "admindash.png"
+				},
+				{
+					"title" : "Projects",
+					"url" : "projects.png"
+				},
+				{
+					"title" : "Judges ",
+					"url" : "judges.png"
+				},
+				{
+					"title" : "Adding Judge",
+					"url" : "addjudge.png"
+				},
+				{
+					"title" : "Judge Login",
+					"url" : "judgelogin.png"
+				},
+				{
+					"title" : "Alloted Projects",
+					"url" : "allotedprojects.png"
+				},
+				{
+					"title" : "Single Project",
+					"url" : "singleproject.png"
+				},
+				{
+					"title" : "Project Location and Marks",
+					"url" : "projectsLocationAndMarks.png"
+				}
+			],
+			"slug":"inc-judging"
 
 
 		}
+
 
 
 	]
