@@ -17,7 +17,33 @@
 				{
 					"title" : "Landing Page",
 					"url" : "credenz.png"
+				},
+				{
+					"title" : "Home Page / Updates",
+					"url" : "home.png"
+				},
+				{
+					"title" : "About Page",
+					"url" : "about.png"
+				},
+				{
+					"title" : "P.I.N.G. Page",
+					"url" : "ping.png"
+				},
+				{
+					"title" : "Events Page",
+					"url" : "events.png"
+				},
+				{
+					"title" : "Contact Us Page",
+					"url" : "contact.png"
+				},
+				{
+					"title" : "Developers Page",
+					"url" : "developers.png"
 				}
+				
+				
 			],
 			"slug":"credenz-website"
 
@@ -150,7 +176,7 @@
 				},
 				{
 					"title" : "Project Location and Marks",
-					"url" : "projectsLocationAndMarks.png"
+					"url" : "proloc.png"
 				}
 			],
 			"slug":"inc-judging"
