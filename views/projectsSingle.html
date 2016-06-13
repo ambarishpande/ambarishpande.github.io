@@ -1,12 +1,27 @@
 
 <div  style="background-color: white;color:black;">
-
+<!-- 
 <div style="width:100%;height: 400px;background-image:url('assets/images/projects/{{project.slug}}/{{project.thumbnail}}');background-position: center;background-size:cover; ">
-	<i class="fa fa-close" ui-sref="projects.list" style="color: white;font-size:20px;position: absolute;top:10px;right:20px;cursor: pointer;"></i>
-</div>
+
+</div> -->
+<div style="width:100%;height: 400px;background-color: black;">
+	<uib-carousel active="active" interval="5000">
+	  <uib-slide ng-repeat="img in project.screenshots" index="$index">
+	    <img ng-src="assets/images/projects/{{project.slug}}/{{img.url}}"  style="margin:auto;height: 400px;">
+	    <div class="carousel-caption">
+	      <p>{{img.title}}</p>
+	    </div>
+
+	  </uib-slide>
+		
+	</uib-carousel>
+	
+		<i class="fa fa-close" ui-sref="projects.list" style="color: white;font-size:20px;position: absolute;top:10px;right:20px;cursor: pointer;"></i>
+	</div>
+
 <div class="container">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-12">
 			<h2>{{project.title}}</h2>
 			<br>
 			<h5>Category : <span class="mylabel">{{project.category}}</span></h5>
@@ -20,19 +35,23 @@
 			</ul>
 			</span>
 			<br>
-			<p class="lead">
+			<!-- <p class="lead">
 				{{project.description}}
-			</p>
-
+			</p> -->
+			<p class="lead" ng-bind = "project.description"></p>
 		</div>
-		<div class="col-md-6">
-		</div>
+		<!-- <div class="col-md-6">
+			<br>
+			<div>
+			  
+			</div>
+		</div> -->
 	</div>
-		<div class="row">
+	<!-- 	<div class="row">
 			<div class="col-md-3" ng-repeat="img in project.screenshots">
 				<img ng-src="assets/images/projects/{{project.slug}}/{{img.url}}" class="img-responsive">
 			</div>
-		</div>
+		</div> -->
 </div>
-	
+<br><br>	
 </div>

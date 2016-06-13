@@ -61,7 +61,7 @@
 			"id":2,
 			"title":"Credenz '15 Registrations",
 			"thumbnail":"login.png",
-			"description":"The participant registration of CREDENZ '15 was handled by an Android App and A Web Application. The Participant details were input into the Android App and on submitting the request to the server all the data was stored on server and an Email Receipt and an SMS were sent to the participant. All the data was accessible to the Organizers through a User Friendly and feature rich Web Application.",
+			"description":"The participant registration of CREDENZ '15 was handled by an Android App and A Web Application.<br> The Participant details were input into the Android App and on submitting the request to the server all the data was stored on server and an Email Receipt and an SMS were sent to the participant. All the data was accessible to the Organizers through a User Friendly and feature rich Web Application.",
 			"category" : "Web App",
 			"date":"August 2015",
 			"technologies" : {

@@ -7,7 +7,8 @@
       .module('app', [
         'app.controllers',
         'ui.router',
-        'ngAnimate'
+        'ngAnimate',
+        'ui.bootstrap'
 
         ]);
 })();
