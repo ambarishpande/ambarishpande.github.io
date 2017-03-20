@@ -182,6 +182,35 @@
 			"slug":"inc-judging"
 
 
+		},
+		{
+			"id":4,
+			"title":"Apex Big Data World 2017 Pune App",
+			"thumbnail":"apexbigdata.png",
+			"description":"Agenda app for Apex Big Data World 2017 Pune Conference organised by Datatorrent India Software Pvt Ltd.",
+			"category" : "Hybrid Android App",
+			"date":"February 2017",
+			"technologies" : {
+				"frontend" : ["MaterializeCSS","AngularJS","Cordova"],
+				"backend" : []
+			},
+			"url":"http://ambarishpande.github.io/apexbigdata/www/",
+			"screenshots":[
+				{
+					"title" : "Agenda",
+					"url" : "apexbigdata1.png"
+				},
+				{
+					"title" : "Talk Details",
+					"url" : "apexbigdata2.png"
+				}
+				
+				
+				
+			],
+			"slug":"apexbigdata"
+
+
 		}
 
 
