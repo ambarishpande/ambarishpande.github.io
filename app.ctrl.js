@@ -19,7 +19,7 @@
   		return{
 		    getAllProjects : function () {
   	    		// body...
-  	    		   return $http.get("http://localhost:9000/projects.json").then(function(result) {
+  	    		   return $http.get("http://ambarishpande.github.io/projects.json").then(function(result) {
 			        projects = result.data.projects;
 			    	 return projects;
 			      });
